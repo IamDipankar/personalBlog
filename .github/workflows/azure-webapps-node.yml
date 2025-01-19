@@ -31,6 +31,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: my-nodejs-app # Replace with your App Service name
+          app-name: dipankarBlog # Replace with your App Service name
           slot-name: production
           package: .
