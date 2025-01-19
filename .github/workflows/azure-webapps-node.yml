@@ -20,8 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: |
+          npm audit fix
           npm install
-          npm run build # Remove if you don’t have a build step
 
       - name: Login to Azure
         uses: azure/login@v1
