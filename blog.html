@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Viewer</title>
+    <link rel="stylesheet" href="styles/blog.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <button onclick="location.href='index.html'">Back to Home</button>
+    </header>
+
+    <div class="blog-container">
+        <div class="blog-title">Sample Blog Title</div>
+        <div class="blog-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula, est ut commodo tincidunt, eros enim pharetra libero, ac malesuada turpis odio a urna. Nullam sed mi non velit feugiat bibendum. Cras luctus ligula sit amet urna facilisis, ac faucibus lacus interdum.
+        </div>
+
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <div class="comment">
+                <div class="commenter-name">John Doe</div>
+                <div class="comment-time">Posted on: January 18, 2025</div>
+                <p>Great blog! Really insightful and well-written.</p>
+            </div>
+
+            <div class="comment">
+                <div class="commenter-name">Jane Smith</div>
+                <div class="comment-time">Posted on: January 19, 2025</div>
+                <p>I loved this article. Looking forward to more posts from you!</p>
+            </div>
+        </div>
+
+        <div class="comment-form">
+            <h2>Leave a Comment</h2>
+            <form id="commentForm">
+                <input type="text" id="commenterName" placeholder="Your Name" required>
+                <textarea id="commentText" placeholder="Your Comment" required></textarea>
+                <button type="submit">Submit Comment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/blog.js">
+    </script>
+</body>
+</html>

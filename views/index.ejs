@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs", { cssFileName: "index.css" }) %>
+
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <button onclick="location.href='form'">Create New</button>
+    </header>
+
+    <% function htmlToPlainText(html) {
+        return html.replace(/<\/?[^>]+(>|$)/g, ""); // Remove all HTML tags
+      } %>
+
+    <main>
+        <% blogs.forEach((blog, index) => { %>
+            <div class="blog-container" onclick="window.location.href='/blog?ID=<%= ids[index] %>'">
+                <h2><%= blog.title %></h2>
+                <p><%= htmlToPlainText(blog.body) %></p>
+            </div>
+        <% }) %>
+    </main>
+</body>
+</html>

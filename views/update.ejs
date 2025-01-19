@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs", {cssFileName : "form.css"}) %>
+
+<body>
+    <header>
+        <h1 onclick="location.href='/'" style="cursor: pointer;">My blog</h1>
+        <button onclick="location.href='/'">Back to Home</button>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <form id="blogForm" action="/update" method="POST">
+                <div>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter blog title" oninput="updateTitle()" minlength="13" maxlength="150" value = "<%= blogData.title %>" required>
+                    <span class="char-counter" id="titleCounter"></span>
+                </div>
+                <div>
+                    <label for="body">Body</label>
+                    <textarea id="body" name="body" placeholder="Write your blog here..." oninput="updateBody()" required><%= blogData.body %></textarea>
+                </div>
+                <input type="hidden" name="id" value="<%= blogData.ID %>">
+                <button type="submit">Update</button>
+            </form>
+        </div>
+
+        <div class="preview-container">
+            <h2 id="previewTitle"><%= blogData.title %></h2>
+            <p id="previewBody"><%= blogData.body %></p>
+        </div>  
+    </div>
+
+    <script src="scripts/form.js"></script>
+</body>
+</html>
+
