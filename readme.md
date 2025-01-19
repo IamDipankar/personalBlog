@@ -19,7 +19,7 @@ This repository contains the code for a **Personal Blog Site** created using **N
 ### Prerequisites
 
 - **Node.js**: Install Node.js runtime on your computer. You can download it from the [Node.js Official Website](https://nodejs.org/).
-- **Git**: Ensure Git is installed to clone the repository.
+- **Git**: Ensure Git is installed to clone the repository. You can download it from the [Git Official Website](https://git-scm.com/).
 
 ### Installation Steps
 
