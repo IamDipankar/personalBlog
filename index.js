@@ -41,11 +41,11 @@ function sendHome(res){
 
 app.get('/', (req, res) => {
     sendHome(res);
-})
+});
 
 app.get('/form', (req, res) => {
     res.render("form.ejs");
-})
+});
 
 app.post('/create', (req, res) => {
     let date = new Date();
@@ -135,7 +135,7 @@ app.post("/delete", (req, res) => {
     
     sendHome(res);
 
-})
+});
 
 app.post("/edit", (req, res) => {
     let id = req.body.id;
@@ -157,7 +157,7 @@ app.post("/update", (req, res) => {
     blogData.editHistory.push({
         timeStamp : time,
         final : true
-    });
+});
 
     // write to json
     const jsonString = JSON.stringify(blogData, null, 2); // Pretty print with 2 spaces
@@ -177,4 +177,4 @@ app.post("/update", (req, res) => {
 
 app.listen(3000, () => {
     console.log("Server has started");
-})
+});
