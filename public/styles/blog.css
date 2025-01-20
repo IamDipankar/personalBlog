@@ -3,19 +3,21 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f9f9f9;
+    background-color: #ece9fe;
 }
 
 /* Header styling */
 header {
     position: sticky;
+    
+    font-family: "Atma", serif;
     top: 0;
     z-index: 1000;
     background-color: #007BFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -51,18 +53,20 @@ header button:hover {
 
 .blog-actions{
     float: right;
+    margin-left: 10px;
 }
 
 .blog-title {
-    font-size: 2rem;
+    font-family: "Karla", serif;
+    font-size: 2.1rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 1rem;
-    clear: both;
 }
 
 .blog-body {
-    font-size: 1rem;
+    font-family: "Lora", serif;
+    font-size: .9rem;
     color: #555;
     line-height: 1.8;
     margin-bottom: 2rem;
@@ -122,4 +126,9 @@ header button:hover {
 
 .comment-form button:hover {
     background-color: #0056b3;
+}
+
+.edit-btn, .delete-btn{
+    border: 0;
+    background: transparent;
 }

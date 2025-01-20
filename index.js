@@ -102,7 +102,14 @@ app.post('/create', (req, res) => {
 app.get("/blog", (req, res) => {
     let ID = req.query.ID;
     const blogData = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "blogs", `${ID}.json`)));
-    res.render('blog.ejs', {blogData});
+    if (typeof blogData.deleted !== 'undefined'){
+        res.render('blog.ejs', {blogData : {
+            title : "[This blog is deleted]",
+            body: "[This blog is deleted]"
+        }});
+    }else{
+        res.render('blog.ejs', {blogData});
+    }
 });
 
 app.post("/delete", (req, res) => {

@@ -9,14 +9,14 @@
     <div class="blog-container">
         <!-- Edit and Delete Buttons -->
         <div class="blog-actions">
-            <form action="/edit" method="POST" style="display: inline;">
+            <form action="/edit" method="POST" style="display: inline;" class = "icon-btn">
                 <input type="hidden" name="id" value="<%= blogData.ID %>">
                 <button type="submit" class="edit-btn">
                     <img src="/logos/edit.svg" alt="Edit" style="width: 20px; height: 20px;">
                 </button>
             </form>
 
-            <form action="/delete" method="POST" style="display: inline;">
+            <form action="/delete" method="POST" style="display: inline;" class = "icon-btn">
                 <input type="hidden" name="id" value="<%= blogData.ID %>">
                 <button type="submit" class="delete-btn">
                     <img src="/logos/delete.svg" alt="Delete" style="width: 20px; height: 20px;">
