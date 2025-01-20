@@ -2,6 +2,10 @@
 
 This repository contains the code for a **Personal Blog Site** created using **Node.js** for the backend and **HTML/CSS** for the frontend. This project is designed for educational purposes, allowing users to create, update, delete, and view blog posts.
 
+# Deployment
+
+You can try this website here : [https://dipankarblog.azurewebsites.net/delete](https://dipankarblog.azurewebsites.net/delete)
+
 ---
 
 ## Features
