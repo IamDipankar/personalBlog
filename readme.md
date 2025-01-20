@@ -4,7 +4,7 @@ This repository contains the code for a **Personal Blog Site** created using **N
 
 # Deployment
 
-You can try this website here : [https://dipankarblog.azurewebsites.net/delete](https://dipankarblog.azurewebsites.net/delete)
+You can try this website here : [https://dipankarblog.azurewebsites.net](https://dipankarblog.azurewebsites.net)
 
 ---
 
