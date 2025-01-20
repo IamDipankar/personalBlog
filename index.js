@@ -9,6 +9,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url)); // Get the directory 
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -175,6 +177,6 @@ app.post("/update", (req, res) => {
 
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Server has started");
 });
